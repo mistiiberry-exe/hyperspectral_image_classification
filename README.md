@@ -1,1 +1,1 @@
-# hyperspectral_image_classification
+# Hyperspectral Image Classification
