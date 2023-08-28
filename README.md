@@ -2,11 +2,13 @@
 # Proposed Model
 The feature extraction method used in this study's hyperspectral image classification model uses a neural network with deep convolutions. Since deep networks can extract spectral and spatial features from hyperspectral imaging (HSI) data, they have an advantage in improving the performance of the model. PCA (Principal Component Analysis), dimension reduction, and feature extraction are addressed. PCA automatically generates features from the time series data and frequency representation images. These features, extracted through PCA, are subsequently inputted into a 3D-CNN-based classifier network for classification purposes.
 ![image](https://github.com/mistiiberry-exe/hyperspectral_image_classification/assets/104710227/eac4f9be-95ff-46fd-ac71-445f2ae30fc7)
+
 The first step in hyperspectral satellite image processing is to preprocess the data. This involves atmospheric correction, geometric correction, removing bad bands, etc. The next stage is classification using CNN and spectral unmixing after the data has been preprocessed. This is done by first extracting features using PCA from the preprocessed data.
 
 # Experimental Result
 The Samson dataset is a relatively straightforward dataset that can be accessed from the provided website. Each of the image's 952x952 pixels was recorded at 156 channels, which covered wavelengths between 401 and 889 nm. The dataset's 3.13 nm spectral resolution is unusually great. A 95x95-pixel section is chosen for analysis to reduce the computational burden caused by the original image's vast size. In the original image, this area starts at the coordinates (252,332). It is significant to note that no blank or extremely noisy channels have any impact on the data. Three separate targets may be seen in this image: "#1 Soil," "#2 Tree," and "#3 Water."
 ![image](https://github.com/mistiiberry-exe/hyperspectral_image_classification/assets/104710227/ced644b4-b0f4-406b-af14-d4224b7eb507)
+
 It is observed that by using the proposed PCA and 3D CNN combined model it has achieved an accuracy of 97.07%.
 
 # Conclusion
